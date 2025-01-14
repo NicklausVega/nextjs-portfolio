@@ -4,7 +4,7 @@ import Particles from "@/components/Particles";
 import React, { useEffect, useState } from "react";
 
 
-export function formatUTCDate(date: Date) {
+function formatUTCDate(date: Date) {
   const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = [
     "Jan",
