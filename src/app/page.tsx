@@ -36,6 +36,7 @@ function formatUTCDate(date: Date) {
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "Rynvo (Digital Marketing)", href: "https://rynvo.media" },
   { name: "Billing Portal", href: "https://billing.nicklausvega.tech" },
   { name: "Projects", href: "/projects" },
   // { name: "Contact", href: "/contact" },
