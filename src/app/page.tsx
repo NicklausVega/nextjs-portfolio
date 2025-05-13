@@ -232,7 +232,7 @@ export default function Home() {
           {/* Features Section */}
           <div className="flex flex-col items-center justify-center text-center backdrop-blur-xl bg-white/5 p-4 sm:p-6 rounded-xl border border-white/10 shadow-lg hover:bg-white/10 hover:shadow-white/5 transition-all duration-300">
             <p className="font-normal mt-3 sm:mt-5 text-sm sm:text-base md:text-lg lg:text-2xl text-stone-50">
-            I'm <strong>Nicklaus Vega</strong>, a dynamic <strong>entrepreneur</strong> and <strong>computer science student</strong> with over 8 years of multifaceted experience in software development and digital project management. Passionate about leveraging technical acumen and creativity to deliver impactful tech solutions and drive business growth.
+            I&apos;m <strong>Nicklaus Vega</strong>, a dynamic <strong>entrepreneur</strong> and <strong>computer science student</strong> with over 8 years of multifaceted experience in software development and digital project management. Passionate about leveraging technical acumen and creativity to deliver impactful tech solutions and drive business growth.
             </p>
           </div>
         </div>
