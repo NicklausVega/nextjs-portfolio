@@ -3,12 +3,14 @@ name = "nicklaus-vega-portfolio"
 compatibility_date = "2024-05-13"
 compatibility_flags = ["nodejs_compat"]
 
+# Specify the build command and output directory for Pages
 [build]
 command = "npm run build"
-output_directory = ".vercel/output/static"
 
+# Define the directory that contains the static assets
 [site]
-bucket = ".vercel/output/static"
+bucket = "out"
 
-[env.production]
+# Set the Node.js version for the build
+[build.environment]
 NODE_VERSION = "18.18.0" 

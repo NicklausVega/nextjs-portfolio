@@ -1,14 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ensure compatibility with Cloudflare Pages
-  output: 'standalone',
+  // Use export output for Cloudflare Pages
+  output: 'export',
   
   // Enable the transpilePackages option for better compatibility
   transpilePackages: [],
   
   // Add Cloudflare-specific optimizations
   experimental: {
-    optimizeCss: true,
+    // Disable CSS optimization that's causing issues
+    optimizeCss: false,
     optimizeServerReact: true,
   },
 
