@@ -10,6 +10,15 @@ export const projects = [
     },
     {
       id: 1,
+      tags: ["UX/UI Design", "Next.JS", "Supabase", "Resend", "Web Development"],
+      logo: "/qrcodegen.jpg",
+      companyName: "QR Code Generator",
+      projectName: "The world's most advanced open-source QR code platform",
+      image: "/68747470733a2f2f63646e2e6d7267616d65722e78797a2f5152436f646547656e657261746f722e706e67.webp",
+      link: "https://www.qrcodegenerator.lol/"
+    },
+    {
+      id: 1,
       tags: ["UX/UI Design", "Next.JS", "Web Development"],
       logo: "/SeniorSync-logo.png",
       companyName: "Senior Sync",

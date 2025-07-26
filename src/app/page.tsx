@@ -409,8 +409,8 @@ export default function Home() {
               </div>
               <div className="mb-4">
                 <h3 className="text-base sm:text-lg font-medium text-white mb-2">Email</h3>
-                <a href="mailto:nicklaus.vega@rynvo.media" className="text-blue-300 hover:text-blue-200 hover:underline transition-colors hover:scale-105 inline-block text-sm sm:text-base">
-                  nicklaus.vega@rynvo.media
+                <a href="mailto:me@nicklausvega.tech" className="text-blue-300 hover:text-blue-200 hover:underline transition-colors hover:scale-105 inline-block text-sm sm:text-base">
+                  me@nicklausvega.tech
                 </a>
               </div>
               <div>

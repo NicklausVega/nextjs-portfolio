@@ -32,7 +32,7 @@ export const personalInfo = {
   name: "Nicklaus Vega",
   title: "Aspiring Entrepreneur and Tech Enthusiast",
   location: "Austin, Texas, United States",
-  email: "nicklaus.vega@rynvo.media",
+  email: "me@nicklausvega.tech",
   website: "nicklausvega.tech",
   summary: "A dynamic computer science student and entrepreneur with over 8 years of multifaceted experience in software development and digital project management. Passionate about leveraging skillful technical acumen and creativity to deliver impactful tech solutions and drive business growth."
 };
@@ -165,9 +165,9 @@ export const skillsData = [
 // Projects Data
 export const projectsData: ProjectType[] = [
   {
-    title: "Rynvo Media",
+    title: "QR Code Generator",
     period: "January 2025 - Present",
-    description: "Founded and operate a full-service U.S.-based digital agency delivering tailored web and brand solutions for small to mid-sized clients using Webflow, Shopify, React, and Nuxt.JS. Managed a team of developers and designers, overseeing project lifecycles from client onboarding to deployment, ensuring timely and high-quality delivery. Handled lead generation and sales pipeline using Cloudflare, Pipedream, and CRM tools to convert inbound and outbound opportunities into long-term clients. Directed branding and design strategy for client-facing assets, maintaining creative consistency across visual identities and digital platforms. Contributed to frontend development on client projects using React and Nuxt.JS, delivering optimized and scalable interfaces.",
-    tags: ["Webflow", "Shopify", "React", "Nuxt.JS", "Web Development"]
+    description: "A QR Code Generator that allows you to generate QR Codes for your business or personal use.",
+    tags: ["Next.JS", "Supabase", "Resend", "Web Development"]
   }
 ]; 
