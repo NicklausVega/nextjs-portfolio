@@ -356,19 +356,15 @@ export default function Home() {
         <div className="backdrop-blur-xl bg-white/5 rounded-xl border border-white/10 shadow-lg max-w-4xl mx-auto hover:bg-white/10 hover:shadow-white/5 transition-all duration-300 relative group">
           <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/30 to-purple-500/30 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
           <div className="relative z-10 bg-black/10 backdrop-blur-xl rounded-xl p-4 sm:p-6 border border-white/10">
-            <h3 className="text-xl sm:text-2xl font-bold text-white">Rynvo Media</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white">QR Code Generator</h3>
             <p className="text-zinc-400 mb-2 sm:mb-4 text-sm sm:text-base">January 2025 - Present</p>
             <p className="text-zinc-300 mb-4 sm:mb-6 text-sm sm:text-base">
-              Founded and operate a full-service U.S.-based digital agency delivering tailored web and brand solutions 
-              for small to mid-sized clients using Webflow, Shopify, React, and Nuxt.JS. Managed a team of developers 
-              and designers, overseeing project lifecycles from client onboarding to deployment, ensuring timely and 
-              high-quality delivery.
+              A QR Code Generator that allows you to generate QR Codes for your business or personal use.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Webflow</span>
-              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Shopify</span>
-              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">React</span>
-              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Nuxt.JS</span>
+              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Next.JS</span>
+              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Supabase</span>
+              <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Resend</span>
               <span className="px-2 py-1 backdrop-blur-md bg-white/10 text-zinc-200 rounded-full text-xs sm:text-sm border border-white/10 hover:bg-white/20 hover:border-white/20 hover:text-white transition-all duration-300 hover:scale-105">Web Development</span>
             </div>
           </div>

@@ -18,7 +18,7 @@ export const projects = [
       link: "https://www.qrcodegenerator.lol/"
     },
     {
-      id: 1,
+      id: 2,
       tags: ["UX/UI Design", "Next.JS", "Web Development"],
       logo: "/SeniorSync-logo.png",
       companyName: "Senior Sync",
@@ -26,7 +26,7 @@ export const projects = [
       image: "/SeniorSync.png",
     },
     {
-      id: 2,
+      id: 3,
       tags: ["UX/UI Design", "Figma", "Web Development"],
       logo: "/rooted-logo.png",
       companyName: "Rooted Expo",
