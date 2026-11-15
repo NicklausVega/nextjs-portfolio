@@ -111,6 +111,7 @@ const Carousel = React.forwardRef<
         return
       }
 
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- sync initial carousel state
       onSelect(api)
       api.on("reInit", onSelect)
       api.on("select", onSelect)

@@ -31,7 +31,9 @@ export default function Particles({
 		if (canvasRef.current) {
 			context.current = canvasRef.current.getContext("2d");
 		}
+		// eslint-disable-next-line react-hooks/immutability -- hoisted handlers; effect runs after render
 		initCanvas();
+		// eslint-disable-next-line react-hooks/immutability
 		animate();
 		window.addEventListener("resize", initCanvas);
 
@@ -41,6 +43,7 @@ export default function Particles({
 	}, []);
 
 	useEffect(() => {
+		// eslint-disable-next-line react-hooks/immutability
 		onMouseMove();
 	}, [mousePosition.x, mousePosition.y]);
 
