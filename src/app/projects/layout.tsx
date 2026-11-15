@@ -1,18 +1,11 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Projects | Nicklaus Vega',
-  description: 'A showcase of my recent work and creative endeavors in web development, UX/UI design, and digital solutions.',
+  title: "Projects",
+  description:
+    "Client sites, community builds, a personal tool and concept studies by Nicklaus Vega, with screenshots, stacks and live links.",
 };
 
-export default function ProjectsLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <>
-      {children}
-    </>
-  );
-} 
+export default function ProjectsLayout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}

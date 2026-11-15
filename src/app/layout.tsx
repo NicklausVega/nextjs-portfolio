@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
-import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
-
+import { Providers } from "@/components/site/Providers";
+import { SiteNav } from "@/components/site/SiteNav";
+import { SiteFooter } from "@/components/site/SiteFooter";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Nicklaus Vega',
-    default: 'Home | Nicklaus Vega', // a default is required when creating a template
+    template: "%s | Nicklaus Vega",
+    default: "Nicklaus Vega | Fintech Lead at IronClad, founder of Rynvo",
   },
-  description: "I’m Nicklaus Vega, an aspiring entrepreneur and computer science student with over 5 years of experience in the tech world. With a passion for machine learning, frontend/backend development, and graphic design, I’m committed to learning, growing, and applying my skills to impactful projects.",
+  description:
+    "Nicklaus Vega is the Financial Technology Lead at IronClad Consulting Services and founder of Rynvo in Austin, Texas. He builds, secures and runs the systems businesses rely on: platform and security engineering, identity and access management, and web development.",
 };
 
 export default function RootLayout({
@@ -17,8 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${GeistSans.className} dark text-white`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Providers>
+          <a className="skip-link" href="#main">
+            Skip to content
+          </a>
+          <SiteNav />
+          <main id="main">{children}</main>
+          <SiteFooter />
+        </Providers>
+      </body>
     </html>
   );
 }
