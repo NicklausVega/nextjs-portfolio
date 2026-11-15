@@ -1638,15 +1638,49 @@ a {
   background: var(--color-surface);
   border-block: 1px solid var(--color-divider);
 }
+.strip__viewport {
+  --strip-gap: clamp(36px, 3.5vw, 56px);
+  overflow: hidden;
+}
+.strip__track {
+  display: flex;
+  width: max-content;
+  animation: strip-marquee 45s linear infinite;
+}
+/* Pause while the pointer is over the strip or a logo has keyboard focus. */
+.strip__viewport:hover .strip__track,
+.strip__viewport:focus-within .strip__track {
+  animation-play-state: paused;
+}
 .strip__list {
   list-style: none;
   margin: 0;
-  padding: 28px var(--space-gutter);
+  /* Trailing padding equals the gap so the seam between the two copies matches. */
+  padding: 28px var(--strip-gap) 28px 0;
   display: flex;
-  gap: 56px;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  scrollbar-width: thin;
+  flex: none;
+  gap: var(--strip-gap);
+}
+@keyframes strip-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .strip__viewport {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .strip__viewport::-webkit-scrollbar {
+    display: none;
+  }
+  .strip__track {
+    animation: none;
+    padding-left: var(--space-gutter);
+  }
+  .strip__list[aria-hidden="true"] {
+    display: none;
+  }
 }
 .strip__item {
   flex: none;

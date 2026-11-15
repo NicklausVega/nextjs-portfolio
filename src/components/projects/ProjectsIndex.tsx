@@ -19,7 +19,7 @@ const isFilter = (v: string | null): v is Filter => FILTERS.some((f) => f.value 
 function countLabel(filter: Filter, n: number) {
   if (filter === "all") return `Showing all ${n} projects`;
   if (filter === "concept") return `Showing ${n} concepts`;
-  if (filter === "personal") return `Showing ${n} personal project`;
+  if (filter === "personal") return `Showing ${n} personal ${n === 1 ? "project" : "projects"}`;
   return `Showing ${n} client and community projects`;
 }
 
@@ -88,7 +88,7 @@ export function ProjectsIndex() {
             <span className="line">and concepts</span>
           </h1>
           <p className="t-muted">
-            Client sites, community builds, one personal tool and two concept studies. Concepts are marked.
+            Client sites, community builds, my own Mr.Gamer brand sites, a personal tool and two concept studies. Concepts are marked.
           </p>
           <ToggleGroup.Root
             type="single"

@@ -29,7 +29,7 @@ import {
 import { FaAws } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { Sticker } from "@/components/site/Sticker";
-import { RYNVO_URL, projectBySlug } from "@/lib/site-content";
+import { RYNVO_URL, projectBySlug, projects } from "@/lib/site-content";
 
 /* ───────── home_intro (xodexdesign-02-about-clients) ───────── */
 const clients = [
@@ -84,7 +84,7 @@ export function HomeWork() {
           <h2 id="work-title" className="t-h2">
             Selected work
           </h2>
-          <p className="label">7 projects</p>
+          <p className="label">{projects.length} projects</p>
         </div>
 
         <div className="work__stage">
@@ -379,19 +379,32 @@ export function HomeRynvo() {
         </div>
       </div>
       <div className="strip">
-        <ul className="strip__list" aria-label="Tools and platforms" data-reveal="rise">
-          {stack.map(({ name, icon: Icon, color }) => (
-            <li
-              key={name}
-              className="strip__item"
-              tabIndex={0}
-              style={{ "--brand": color } as React.CSSProperties}
-            >
-              <Icon aria-hidden="true" />
-              {name}
-            </li>
-          ))}
-        </ul>
+        <div className="strip__viewport" data-reveal="rise">
+          {/* Two identical lists so the marquee loops seamlessly; the copy is hidden from assistive tech. */}
+          <div className="strip__track">
+            <ul className="strip__list" aria-label="Tools and platforms">
+              {stack.map(({ name, icon: Icon, color }) => (
+                <li
+                  key={name}
+                  className="strip__item"
+                  tabIndex={0}
+                  style={{ "--brand": color } as React.CSSProperties}
+                >
+                  <Icon aria-hidden="true" />
+                  {name}
+                </li>
+              ))}
+            </ul>
+            <ul className="strip__list" aria-hidden="true">
+              {stack.map(({ name, icon: Icon, color }) => (
+                <li key={name} className="strip__item" style={{ "--brand": color } as React.CSSProperties}>
+                  <Icon aria-hidden="true" />
+                  {name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

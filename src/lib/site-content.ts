@@ -146,6 +146,40 @@ export const projects: Project[] = [
     link: "https://www.qrcodegenerator.lol/",
     linkLabel: "Visit qrcodegenerator.lol",
   },
+  {
+    slug: "mr-gamer",
+    name: "Mr.Gamer",
+    type: "Personal brand site",
+    status: "Personal project",
+    category: "personal",
+    stack: ["Next.js", "Web development"],
+    image: "/assets/mrgamer-web.png",
+    imageAlt: "Mr.Gamer website homepage with the headline The scripts. The cinematics.",
+    logo: "/assets/themrgamer-logo.png",
+    logoAlt: "Mr Gamer logo",
+    lede: "The home of my Mr.Gamer brand.",
+    description:
+      "A site for my GTA 5, FiveM and LSPDFR work: in-engine cinematics, free script releases like MoveThatPed and dotMenu, and links to the YouTube channel and Discord.",
+    link: "https://mrgamer.xyz/",
+    linkLabel: "Visit mrgamer.xyz",
+  },
+  {
+    slug: "mr-gamer-store",
+    name: "Mr.Gamer Store",
+    type: "Personal brand storefront",
+    status: "Personal project",
+    category: "personal",
+    stack: ["Next.js", "Web development"],
+    image: "/assets/mrgamer-store-web.png",
+    imageAlt: "Mr.Gamer Store homepage with the headline The drops live here.",
+    logo: "/assets/themrgamer-logo.png",
+    logoAlt: "Mr Gamer logo",
+    lede: "The official Mr.Gamer storefront.",
+    description:
+      "A store for FiveM and LSPDFR script licenses and cinematic tools. Keys and downloads are issued the moment payment clears and stay in the buyer's account.",
+    link: "https://store.mrgamer.xyz/",
+    linkLabel: "Visit store.mrgamer.xyz",
+  },
 ];
 
 export const projectBySlug = (slug: string) => projects.find((p) => p.slug === slug);
