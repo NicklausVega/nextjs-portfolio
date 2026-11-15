@@ -2,6 +2,14 @@
 const nextConfig = {
   // Use export output for Cloudflare Pages
   output: 'export',
+
+  // Hide the Next.js dev overlay badge in previews.
+  devIndicators: false,
+
+  // Static export cannot use the on-demand image optimizer.
+  images: {
+    unoptimized: true,
+  },
   
   // Enable the transpilePackages option for better compatibility
   transpilePackages: [],
